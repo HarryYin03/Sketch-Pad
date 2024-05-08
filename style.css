@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: url(img/wallpaperflare.com_wallpaper.jpg)no-repeat center center/cover;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board{
+    width: 500px;
+    height: 500px;
+    display: grid;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.board:hover{
+    cursor: pointer;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    min-height: 300px;
+    width: 80vw;
+    height: 60vw;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.mode{
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.buttons{
+    margin-top: 10px;
+    margin-bottom: 10px;;
+}
+
+button{
+    padding: 0.3em 1.2em;
+    margin: 0.3rem 0;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.5s;
+    background-color: white;
+    font-size: 1.2rem;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.buttons #black{
+    color: black;
+}
+
+.buttons #black:hover{
+    background: radial-gradient(circle, rgba(17,21,23,1) 0%, rgba(145,135,111,1) 100%);
+    color: white;
+}
+
+.buttons #white{
+    color:#e8d199;
+}
+
+.buttons #white:hover{
+    background: radial-gradient(circle, rgba(214,231,238,1) 0%, rgba(232,209,153,1) 100%);
+    color: white;
+}
+
+.buttons #gray{
+    color: gray;
+}
+
+.buttons #gray:hover{
+    background: radial-gradient(circle, rgba(146,175,189,1) 0%, rgba(130,130,130,1) 100%);
+    color: white;
+}
+.buttons #random{
+    background-color: white;
+    color: rgb(131,58,180)
+}
+
+.buttons #random:hover{
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.buttons #reset{
+    color: rgb(63,94,251);
+}
+
+.buttons #reset:hover{
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    color: white;
+}
+
+input{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 35px;
+    margin: 10px;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 100;
+    width: 100px;
+}
+
+#set{
+    background-color: white;
+    color: rgb(185,146,189);
+}
+
+#set:hover{
+    background: linear-gradient(90deg, rgba(185,146,189,1) 0%, rgba(231,155,155,1) 100%);
+    color: white;
+}
+
+
+.error{
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: red;
+    font-weight: 600;
+}
+
